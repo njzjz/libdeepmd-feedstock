@@ -1,16 +1,9 @@
-dp_variant:
-- cpu
-- gpu
-tf:
-- "2.0.0 cpu"
-- "2.0.0 gpu"
-cudatoolkit:
-- 10.0
+tf_version:
+- 2.0.0
 cudnn:
 - 7.6
-zip_keys:
-- dp_variant
-- tf
+cuda_compiler_version:
+- None
 float_prec:
 - low
 - high
@@ -18,3 +11,6 @@ channel_sources:
 - deepmodeling,defaults
 channel_targets:
 - deepmodeling main
+cuda_compiler_version:  
+- None
+- 10.0  
