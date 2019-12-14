@@ -1,0 +1,16 @@
+dp_variant:
+- cpu
+- gpu
+tf:
+- "2.0.0 cpu"
+- "2.0.0 gpu"
+cudatoolkit:
+- 10.0
+cudnn:
+- 7.6
+zip_keys:
+- dp_variant
+- tf
+float_prec:
+- low
+- high
