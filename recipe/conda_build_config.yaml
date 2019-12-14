@@ -1,18 +1,9 @@
-dp_variant:
-- cpu
-- gpu
 tf_version:
 - 2.0.0
-cudatoolkit:
-- 10.0
 cudnn:
 - 7.6
-docker_image:
-- condaforge/linux-anvil-comp7
-- condaforge/linux-anvil-cuda:10.0
-zip_keys:
-- dp_variant
-- docker_image
+cuda_compiler_version:
+- None
 float_prec:
 - low
 - high
@@ -20,3 +11,6 @@ channel_sources:
 - deepmodeling,defaults
 channel_targets:
 - deepmodeling main
+cuda_compiler_version:  
+- None
+- 10.0  

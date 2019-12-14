@@ -6,26 +6,18 @@ channel_sources:
 - deepmodeling,defaults
 channel_targets:
 - deepmodeling main
-cudatoolkit:
+cuda_compiler:
+- nvcc
+cuda_compiler_version:
 - '10.0'
-cudnn:
-- '7.6'
 cxx_compiler:
 - gxx
 cxx_compiler_version:
 - '7'
 docker_image:
-- condaforge/linux-anvil-comp7
-dp_variant:
-- cpu
+- condaforge/linux-anvil-cuda:10.0
 float_prec:
-- high
-pin_run_as_build:
-  cudnn:
-    min_pin: x.x
-    max_pin: x
-tf:
-- 2.0.0 cpu
+- low
 zip_keys:
-- - dp_variant
-  - tf
+- - cuda_compiler_version
+  - docker_image

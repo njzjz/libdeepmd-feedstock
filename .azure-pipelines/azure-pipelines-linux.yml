@@ -10,20 +10,20 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      linux_dp_variantcpufloat_prechightf2.0.0 cpu:
-        CONFIG: linux_dp_variantcpufloat_prechightf2.0.0 cpu
+      linux_cuda_compiler_version10.0float_prechigh:
+        CONFIG: linux_cuda_compiler_version10.0float_prechigh
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-cuda:10.0
+      linux_cuda_compiler_version10.0float_preclow:
+        CONFIG: linux_cuda_compiler_version10.0float_preclow
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-cuda:10.0
+      linux_cuda_compiler_versionNonefloat_prechigh:
+        CONFIG: linux_cuda_compiler_versionNonefloat_prechigh
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantcpufloat_preclowtf2.0.0 cpu:
-        CONFIG: linux_dp_variantcpufloat_preclowtf2.0.0 cpu
-        UPLOAD_PACKAGES: True
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantgpufloat_prechightf2.0.0 gpu:
-        CONFIG: linux_dp_variantgpufloat_prechightf2.0.0 gpu
-        UPLOAD_PACKAGES: True
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantgpufloat_preclowtf2.0.0 gpu:
-        CONFIG: linux_dp_variantgpufloat_preclowtf2.0.0 gpu
+      linux_cuda_compiler_versionNonefloat_preclow:
+        CONFIG: linux_cuda_compiler_versionNonefloat_preclow
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
   steps:
