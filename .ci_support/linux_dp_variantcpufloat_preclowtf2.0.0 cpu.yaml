@@ -1,0 +1,31 @@
+c_compiler:
+- gcc
+c_compiler_version:
+- '7'
+channel_sources:
+- deepmodeling,defaults
+channel_targets:
+- deepmodeling main
+cudatoolkit:
+- '10.0'
+cudnn:
+- '7.6'
+cxx_compiler:
+- gxx
+cxx_compiler_version:
+- '7'
+docker_image:
+- condaforge/linux-anvil-comp7
+dp_variant:
+- cpu
+float_prec:
+- low
+pin_run_as_build:
+  cudnn:
+    min_pin: x.x
+    max_pin: x
+tf:
+- 2.0.0 cpu
+zip_keys:
+- - dp_variant
+  - tf
