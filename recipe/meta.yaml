@@ -1,6 +1,6 @@
 {% set name = "libdeepmd" %}
 {% set version = "1.1.1" %}
-
+{% set tf = "{} {}".format(tf_version, dp_variant) %}
 
 package:
   name: {{ name|lower }}
