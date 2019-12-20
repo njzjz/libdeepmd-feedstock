@@ -14,3 +14,7 @@ channel_targets:
 cuda_compiler_version:  
 - None
 - 10.0  
+c_compiler_version:
+- 5.4
+cxx_compiler_version:
+- 5.4
