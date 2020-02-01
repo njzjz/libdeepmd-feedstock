@@ -40,6 +40,10 @@ requirements:
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}  # [cuda_compiler_version != 'None']
     - {{ pin_compatible('cudnn') }}  # [cuda_compiler_version != 'None']
 
+test:
+  commands:
+    - ldd $PREFIX/bin/dp_ipi
+
 about:
   home: https://github.com/deepmodeling/deepmd-kit
   license: LGPL-3.0
