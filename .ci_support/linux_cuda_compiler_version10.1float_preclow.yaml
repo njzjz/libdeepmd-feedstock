@@ -1,0 +1,29 @@
+c_compiler:
+- gcc
+c_compiler_version:
+- '5.4'
+channel_sources:
+- deepmodeling,defaults
+channel_targets:
+- deepmodeling main
+cuda_compiler:
+- nvcc
+cuda_compiler_version:
+- '10.1'
+cudnn:
+- '7.6'
+cxx_compiler:
+- gxx
+cxx_compiler_version:
+- '5.4'
+docker_image:
+- condaforge/linux-anvil-cuda:10.1
+float_prec:
+- low
+pin_run_as_build:
+  cudnn:
+    min_pin: x.x
+    max_pin: x
+zip_keys:
+- - cuda_compiler_version
+  - docker_image
