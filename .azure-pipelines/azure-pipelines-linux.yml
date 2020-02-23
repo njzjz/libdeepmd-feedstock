@@ -18,6 +18,22 @@ jobs:
         CONFIG: linux_cuda_compiler_version10.0float_preclow
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-cuda:10.0
+      linux_cuda_compiler_version10.1float_prechigh:
+        CONFIG: linux_cuda_compiler_version10.1float_prechigh
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-cuda:10.1
+      linux_cuda_compiler_version10.1float_preclow:
+        CONFIG: linux_cuda_compiler_version10.1float_preclow
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-cuda:10.1
+      linux_cuda_compiler_version9.2float_prechigh:
+        CONFIG: linux_cuda_compiler_version9.2float_prechigh
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-cuda:9.2
+      linux_cuda_compiler_version9.2float_preclow:
+        CONFIG: linux_cuda_compiler_version9.2float_preclow
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-cuda:9.2
       linux_cuda_compiler_versionNonefloat_prechigh:
         CONFIG: linux_cuda_compiler_versionNonefloat_prechigh
         UPLOAD_PACKAGES: True
