@@ -1,5 +1,5 @@
 {% set name = "libdeepmd" %}
-{% set version = "1.1.4" %}
+{% set version = "1.2.0" %}
 {% if cuda_compiler_version == "None" %}
 {% set dp_variant = "cpu" %}
 {% else %}
@@ -13,9 +13,7 @@ package:
 
 source: 
   git_url: https://github.com/deepmodeling/deepmd-kit
-  git_rev: 07c42c1c97682731e619b44b8751d3f137a96f1a
-  patches:
-    - 6eeca8f56c9e648a9da5342b6cda0f0da6ca0fa9.diff
+  git_rev: bc0188307971c0cee4f47827c8b177043bc3568c
 
 build:
   number: 0
