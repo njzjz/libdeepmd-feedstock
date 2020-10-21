@@ -9,7 +9,7 @@ channel_targets:
 cuda_compiler:
 - nvcc
 cuda_compiler_version:
-- '9.2'
+- None
 cudnn:
 - '7.6'
 cxx_compiler:
@@ -17,13 +17,17 @@ cxx_compiler:
 cxx_compiler_version:
 - '5.4'
 docker_image:
-- condaforge/linux-anvil-cuda:9.2
+- condaforge/linux-anvil-comp7
 float_prec:
-- low
+- high
 pin_run_as_build:
   cudnn:
     min_pin: x.x
     max_pin: x
+target_platform:
+- linux-64
 zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
 - - cuda_compiler_version
   - docker_image

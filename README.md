@@ -5,11 +5,13 @@ Home: https://github.com/deepmodeling/deepmd-kit
 
 Package license: LGPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/deepmd-kit-recipes/libdeepmd-feedstock/blob/master/LICENSE.txt)
 
 Summary: A deep learning package for many-body potential energy representation and molecular dynamics
 
+Development: https://github.com/deepmodeling/deepmd-kit
 
+Documentation: https://github.com/deepmodeling/deepmd-kit
 
 Current build status
 ====================
@@ -29,83 +31,65 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_cuda_compiler_version10.0float_prechigh</td>
+              <td>linux_64_c_compiler_version5.4cuda_compiler_version10.0cxx_compiler_version5.4float_prechigh</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.0float_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version5.4cuda_compiler_version10.0cxx_compiler_version5.4float_prechigh" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version10.0float_preclow</td>
+              <td>linux_64_c_compiler_version5.4cuda_compiler_version10.0cxx_compiler_version5.4float_preclow</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.0float_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version5.4cuda_compiler_version10.0cxx_compiler_version5.4float_preclow" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version10.1float_prechigh</td>
+              <td>linux_64_c_compiler_version5.4cuda_compiler_version10.1cxx_compiler_version5.4float_prechigh</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.1float_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version5.4cuda_compiler_version10.1cxx_compiler_version5.4float_prechigh" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version10.1float_preclow</td>
+              <td>linux_64_c_compiler_version5.4cuda_compiler_version10.1cxx_compiler_version5.4float_preclow</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version10.1float_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version5.4cuda_compiler_version10.1cxx_compiler_version5.4float_preclow" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version9.2float_prechigh</td>
+              <td>linux_64_c_compiler_version5.4cuda_compiler_version9.2cxx_compiler_version5.4float_prechigh</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version9.2float_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version5.4cuda_compiler_version9.2cxx_compiler_version5.4float_prechigh" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_version9.2float_preclow</td>
+              <td>linux_64_c_compiler_version5.4cuda_compiler_version9.2cxx_compiler_version5.4float_preclow</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_version9.2float_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version5.4cuda_compiler_version9.2cxx_compiler_version5.4float_preclow" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_versionNonefloat_prechigh</td>
+              <td>linux_64_c_compiler_version5.4cuda_compiler_versionNonecxx_compiler_version5.4float_prechigh</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_versionNonefloat_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version5.4cuda_compiler_versionNonecxx_compiler_version5.4float_prechigh" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_cuda_compiler_versionNonefloat_preclow</td>
+              <td>linux_64_c_compiler_version5.4cuda_compiler_versionNonecxx_compiler_version5.4float_preclow</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_cuda_compiler_versionNonefloat_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_c_compiler_version5.4cuda_compiler_versionNonecxx_compiler_version5.4float_preclow" alt="variant">
                 </a>
               </td>
             </tr>
           </tbody>
         </table>
       </details>
-    </td>
-  </tr>
-  <tr>
-    <td>OSX</td>
-    <td>
-      <img src="https://img.shields.io/badge/OSX-disabled-lightgrey.svg" alt="OSX disabled">
-    </td>
-  </tr>
-  <tr>
-    <td>Windows</td>
-    <td>
-      <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
-    </td>
-  </tr>
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
     </td>
   </tr>
 </table>
