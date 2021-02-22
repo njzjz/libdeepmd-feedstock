@@ -1,5 +1,5 @@
 {% set name = "libdeepmd" %}
-{% set version = "api" %}
+{% set version = "2.3.2rc0" %}
 {% if cuda_compiler_version == "None" %}
 {% set dp_variant = "cpu" %}
 {% else %}
