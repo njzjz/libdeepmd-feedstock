@@ -14,9 +14,9 @@
 {% set dp_variant = "gpu" %}
 
 {% if cuda_compiler_version == "11.1" %}
-{% set tf_version = "2.4" %}
+{% set tf_version = "2.4.1" %}
 {% elif cuda_compiler_version == "11.0" %}
-{% set tf_version = "2.4" %}
+{% set tf_version = "2.4.1" %}
 {% elif cuda_compiler_version == "10.1" %}
 {% set tf_version = "2.3" %}
 {% elif cuda_compiler_version == "10.0" %}
