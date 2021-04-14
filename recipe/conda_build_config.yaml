@@ -6,9 +6,9 @@ c_compiler_version:
 cxx_compiler_version:
 - 7.3
 channel_sources:
-- deepmodeling,defaults,nvidia
+- deepmodeling/label/dev,deepmodeling,defaults,nvidia
 channel_targets:
-- deepmodeling main
+- deepmodeling dev
 cuda_compiler_version:  
 - None
 - 9.2
