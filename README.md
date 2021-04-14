@@ -136,6 +136,7 @@ Installing `libdeepmd` from the `deepmodeling` channel can be achieved by adding
 
 ```
 conda config --add channels deepmodeling
+conda config --set channel_priority strict
 ```
 
 Once the `deepmodeling` channel has been enabled, `libdeepmd` can be installed with:
