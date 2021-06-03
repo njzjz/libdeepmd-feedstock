@@ -1,7 +1,7 @@
 set -e
 mkdir -p source/build
 cd source/build
-cmake -DTENSORFLOW_ROOT=${PREFIX} -DCMAKE_INSTALL_PREFIX=${PREFIX} -DFLOAT_PREC=${float_prec} -DCMAKE_CXX_FLAGS="-lrt" -DCMAKE_SHARED_LINKER_FLAGS_INIT="-lrt"..
+cmake -DTENSORFLOW_ROOT=${PREFIX} -DCMAKE_INSTALL_PREFIX=${PREFIX} -DFLOAT_PREC=${float_prec} -DCMAKE_CXX_FLAGS="-lrt" -DCMAKE_SHARED_LINKER_FLAGS_INIT="-lrt" ..
 make -j${CPU_COUNT}
 make install
 make lammps
