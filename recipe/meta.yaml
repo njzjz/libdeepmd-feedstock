@@ -51,6 +51,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
+    - make
     - git
   host:
     - cudatoolkit {{ cuda_compiler_version }}*  # [cuda_compiler_version != 'None']

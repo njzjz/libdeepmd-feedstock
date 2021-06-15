@@ -1,7 +1,7 @@
 set -e
 mkdir -p source/build
 cd source/build
-if [[ ${dp_variant} == "gpu" ]]; then
+if [[ ${cuda_compiler_version} != "None" ]]; then
     DEEPMD_USE_CUDA_TOOLKIT=TRUE
 else
     DEEPMD_USE_CUDA_TOOLKIT=FALSE
