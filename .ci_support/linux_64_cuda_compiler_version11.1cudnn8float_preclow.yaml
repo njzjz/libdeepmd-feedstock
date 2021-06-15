@@ -19,7 +19,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '7.3'
 docker_image:
-- quay.io/condaforge/linux-anvil-cos7-cuda:11.1
+- quay.io/condaforge/linux-anvil-cuda:11.1
 float_prec:
 - low
 target_platform:
