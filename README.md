@@ -31,87 +31,59 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_cuda_compiler_version10.0cudnn7float_prechigh</td>
+              <td>linux_64_cuda_compiler_version10.1float_prechigh</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version10.0cudnn7float_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version10.1float_prechigh" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version10.0cudnn7float_preclow</td>
+              <td>linux_64_cuda_compiler_version10.1float_preclow</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version10.0cudnn7float_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version10.1float_preclow" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version10.1cudnn7float_prechigh</td>
+              <td>linux_64_cuda_compiler_version11.0float_prechigh</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version10.1cudnn7float_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version11.0float_prechigh" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version10.1cudnn7float_preclow</td>
+              <td>linux_64_cuda_compiler_version11.0float_preclow</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version10.1cudnn7float_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version11.0float_preclow" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version11.0cudnn8float_prechigh</td>
+              <td>linux_64_cuda_compiler_version11.1float_prechigh</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version11.0cudnn8float_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version11.1float_prechigh" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version11.0cudnn8float_preclow</td>
+              <td>linux_64_cuda_compiler_version11.1float_preclow</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version11.0cudnn8float_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version11.1float_preclow" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version11.1cudnn8float_prechigh</td>
+              <td>linux_64_cuda_compiler_versionNonefloat_prechigh</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version11.1cudnn8float_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_versionNonefloat_prechigh" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version11.1cudnn8float_preclow</td>
+              <td>linux_64_cuda_compiler_versionNonefloat_preclow</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version11.1cudnn8float_preclow" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_cuda_compiler_version9.2cudnn7float_prechigh</td>
-              <td>
-                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version9.2cudnn7float_prechigh" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_cuda_compiler_version9.2cudnn7float_preclow</td>
-              <td>
-                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version9.2cudnn7float_preclow" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_cuda_compiler_versionNonecudnnNonefloat_prechigh</td>
-              <td>
-                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_versionNonecudnnNonefloat_prechigh" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_cuda_compiler_versionNonecudnnNonefloat_preclow</td>
-              <td>
-                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_versionNonecudnnNonefloat_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_versionNonefloat_preclow" alt="variant">
                 </a>
               </td>
             </tr>

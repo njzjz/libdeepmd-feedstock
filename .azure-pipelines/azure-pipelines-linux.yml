@@ -8,52 +8,36 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_cuda_compiler_version10.0cudnn7float_prechigh:
-        CONFIG: linux_64_cuda_compiler_version10.0cudnn7float_prechigh
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-cuda:10.0
-      linux_64_cuda_compiler_version10.0cudnn7float_preclow:
-        CONFIG: linux_64_cuda_compiler_version10.0cudnn7float_preclow
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-cuda:10.0
-      linux_64_cuda_compiler_version10.1cudnn7float_prechigh:
-        CONFIG: linux_64_cuda_compiler_version10.1cudnn7float_prechigh
+      linux_64_cuda_compiler_version10.1float_prechigh:
+        CONFIG: linux_64_cuda_compiler_version10.1float_prechigh
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-cuda:10.1
-      linux_64_cuda_compiler_version10.1cudnn7float_preclow:
-        CONFIG: linux_64_cuda_compiler_version10.1cudnn7float_preclow
+      linux_64_cuda_compiler_version10.1float_preclow:
+        CONFIG: linux_64_cuda_compiler_version10.1float_preclow
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-cuda:10.1
-      linux_64_cuda_compiler_version11.0cudnn8float_prechigh:
-        CONFIG: linux_64_cuda_compiler_version11.0cudnn8float_prechigh
+      linux_64_cuda_compiler_version11.0float_prechigh:
+        CONFIG: linux_64_cuda_compiler_version11.0float_prechigh
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.0
-      linux_64_cuda_compiler_version11.0cudnn8float_preclow:
-        CONFIG: linux_64_cuda_compiler_version11.0cudnn8float_preclow
+      linux_64_cuda_compiler_version11.0float_preclow:
+        CONFIG: linux_64_cuda_compiler_version11.0float_preclow
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.0
-      linux_64_cuda_compiler_version11.1cudnn8float_prechigh:
-        CONFIG: linux_64_cuda_compiler_version11.1cudnn8float_prechigh
+      linux_64_cuda_compiler_version11.1float_prechigh:
+        CONFIG: linux_64_cuda_compiler_version11.1float_prechigh
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.1
-      linux_64_cuda_compiler_version11.1cudnn8float_preclow:
-        CONFIG: linux_64_cuda_compiler_version11.1cudnn8float_preclow
+      linux_64_cuda_compiler_version11.1float_preclow:
+        CONFIG: linux_64_cuda_compiler_version11.1float_preclow
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.1
-      linux_64_cuda_compiler_version9.2cudnn7float_prechigh:
-        CONFIG: linux_64_cuda_compiler_version9.2cudnn7float_prechigh
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-cuda:9.2
-      linux_64_cuda_compiler_version9.2cudnn7float_preclow:
-        CONFIG: linux_64_cuda_compiler_version9.2cudnn7float_preclow
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-cuda:9.2
-      linux_64_cuda_compiler_versionNonecudnnNonefloat_prechigh:
-        CONFIG: linux_64_cuda_compiler_versionNonecudnnNonefloat_prechigh
+      linux_64_cuda_compiler_versionNonefloat_prechigh:
+        CONFIG: linux_64_cuda_compiler_versionNonefloat_prechigh
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_cuda_compiler_versionNonecudnnNonefloat_preclow:
-        CONFIG: linux_64_cuda_compiler_versionNonecudnnNonefloat_preclow
+      linux_64_cuda_compiler_versionNonefloat_preclow:
+        CONFIG: linux_64_cuda_compiler_versionNonefloat_preclow
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360
