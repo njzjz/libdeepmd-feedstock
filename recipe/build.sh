@@ -1,7 +1,13 @@
 set -e
 mkdir -p source/build
 cd source/build
-cmake -DTENSORFLOW_ROOT=${PREFIX} -DCMAKE_INSTALL_PREFIX=${PREFIX} -DFLOAT_PREC=${float_prec} -DCMAKE_CXX_FLAGS="-lrt" -DCMAKE_SHARED_LINKER_FLAGS_INIT="-lrt" ..
+unset CXXFLAGS
+if [[ ${cuda_compiler_version} != "None" ]]; then
+    DEEPMD_USE_CUDA_TOOLKIT=TRUE
+else
+    DEEPMD_USE_CUDA_TOOLKIT=FALSE
+fi
+cmake -DTENSORFLOW_ROOT=${PREFIX} -DCMAKE_INSTALL_PREFIX=${PREFIX} -DFLOAT_PREC=${float_prec} -DUSE_CUDA_TOOLKIT=${DEEPMD_USE_CUDA_TOOLKIT} ..
 make -j${CPU_COUNT}
 make install
 make lammps
