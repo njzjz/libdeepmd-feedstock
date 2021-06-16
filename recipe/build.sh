@@ -1,6 +1,7 @@
 set -e
 mkdir -p source/build
 cd source/build
+unset CXX_FLAGS
 if [[ ${cuda_compiler_version} != "None" ]]; then
     DEEPMD_USE_CUDA_TOOLKIT=TRUE
 else
