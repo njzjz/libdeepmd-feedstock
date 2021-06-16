@@ -1,7 +1,7 @@
 set -e
 mkdir -p source/build
 cd source/build
-unset CXXFLAGS
+export CXXFLAGS=${CXXFLAGS/c++17/c++11}
 if [[ ${cuda_compiler_version} != "None" ]]; then
     DEEPMD_USE_CUDA_TOOLKIT=TRUE
 else
