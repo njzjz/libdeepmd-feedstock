@@ -1,5 +1,5 @@
 {% set name = "libdeepmd" %}
-{% set version = "2.0.0.b2" %}
+{% set version = "2.0.0.b3" %}
 {% if cuda_compiler_version == "None" %}
 {% set dp_variant = "cpu" %}
 {% else %}
@@ -34,7 +34,7 @@ source:
   git_rev: v{{ version }}
 
 build:
-  number: 1
+  number: 0
   string: "{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"  # [float_prec == 'high']
   string: "{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
   run_exports:
