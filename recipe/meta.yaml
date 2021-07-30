@@ -6,22 +6,7 @@
 {% set dp_variant = "gpu" %}
 {% endif %}
 
-{% if cuda_compiler_version == "None" %}
-{% set dp_variant = "cpu" %}
-{% set tf_version = "2.3" %}
-
-{% else %}
-{% set dp_variant = "gpu" %}
-
-{% if cuda_compiler_version == "11.1" %}
-{% set tf_version = "2.4.1" %}
-{% elif cuda_compiler_version == "11.0" %}
-{% set tf_version = "2.4.1" %}
-{% elif cuda_compiler_version == "10.1" %}
-{% set tf_version = "2.3" %}
-{% endif %}
-
-{% endif %}
+{% set tf_version = "2.5" %}
 
 {% set tf = "{} {}".format(tf_version, dp_variant) %}
 
@@ -34,12 +19,10 @@ source:
   git_rev: v{{ version }}
 
 build:
-  number: 0
-  string: "{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"  # [float_prec == 'high']
-  string: "{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
+  number: 1
+  string: "{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"
   run_exports:
-    - libdeepmd {{ version }} *{{ dp_variant }}  # [float_prec == 'high']
-    - libdeepmd {{ version }} *{{ dp_variant }}_{{ float_prec }}  # [float_prec != 'high']
+    - libdeepmd {{ version }} *{{ dp_variant }}
   skip: true  # [not linux]
 
 requirements:
@@ -57,6 +40,8 @@ requirements:
     - libtensorflow_cc {{ tf }}*
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}  # [cuda_compiler_version != 'None']
     - {{ pin_compatible('cudnn') }}  # [cuda_compiler_version != 'None']
+  run_constrained:
+    - lammps-dp >=2.0.0.b3
 
 test:
   commands:
