@@ -8,36 +8,16 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_cuda_compiler_version10.1cudnn7float_prechigh:
-        CONFIG: linux_64_cuda_compiler_version10.1cudnn7float_prechigh
+      linux_64_cuda_compiler_version10.1cudnn7:
+        CONFIG: linux_64_cuda_compiler_version10.1cudnn7
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-cuda:10.1
-      linux_64_cuda_compiler_version10.1cudnn7float_preclow:
-        CONFIG: linux_64_cuda_compiler_version10.1cudnn7float_preclow
+      linux_64_cuda_compiler_version11.3cudnn8:
+        CONFIG: linux_64_cuda_compiler_version11.3cudnn8
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-cuda:10.1
-      linux_64_cuda_compiler_version11.0cudnn8float_prechigh:
-        CONFIG: linux_64_cuda_compiler_version11.0cudnn8float_prechigh
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.0
-      linux_64_cuda_compiler_version11.0cudnn8float_preclow:
-        CONFIG: linux_64_cuda_compiler_version11.0cudnn8float_preclow
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.0
-      linux_64_cuda_compiler_version11.1cudnn8float_prechigh:
-        CONFIG: linux_64_cuda_compiler_version11.1cudnn8float_prechigh
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.1
-      linux_64_cuda_compiler_version11.1cudnn8float_preclow:
-        CONFIG: linux_64_cuda_compiler_version11.1cudnn8float_preclow
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.1
-      linux_64_cuda_compiler_versionNonecudnnNonefloat_prechigh:
-        CONFIG: linux_64_cuda_compiler_versionNonecudnnNonefloat_prechigh
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_cuda_compiler_versionNonecudnnNonefloat_preclow:
-        CONFIG: linux_64_cuda_compiler_versionNonecudnnNonefloat_preclow
+        DOCKER_IMAGE: ghcr.io/deepmd-kit-recipes/linux-anvil-cuda:11.3
+      linux_64_cuda_compiler_versionNonecudnnundefined:
+        CONFIG: linux_64_cuda_compiler_versionNonecudnnundefined
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360
