@@ -36,6 +36,7 @@ requirements:
     - cudatoolkit {{ cuda_compiler_version }}*  # [cuda_compiler_version != 'None']
     - cudnn {{ cudnn }}*  # [cuda_compiler_version != 'None']
     - libtensorflow_cc {{ tf }}*
+    - mkl-devel
   run:
     - libtensorflow_cc {{ tf }}*
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}  # [cuda_compiler_version != 'None']
