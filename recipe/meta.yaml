@@ -36,11 +36,12 @@ requirements:
     - cudatoolkit {{ cuda_compiler_version }}*  # [cuda_compiler_version != 'None']
     - cudnn {{ cudnn }}*  # [cuda_compiler_version != 'None']
     - libtensorflow_cc {{ tf }}*
-    - mkl-devel
+    - intel-openmp
   run:
     - libtensorflow_cc {{ tf }}*
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}  # [cuda_compiler_version != 'None']
     - {{ pin_compatible('cudnn') }}  # [cuda_compiler_version != 'None']
+    - intel-openmp
   run_constrained:
     - lammps-dp >=2.0.0.b3
 
