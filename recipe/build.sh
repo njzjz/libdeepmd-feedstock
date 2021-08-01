@@ -6,7 +6,7 @@ if [[ ${cuda_compiler_version} != "None" ]]; then
 else
     DEEPMD_USE_CUDA_TOOLKIT=FALSE
 fi
-cmake -DTENSORFLOW_ROOT=${PREFIX} -DCMAKE_INSTALL_PREFIX=${PREFIX} -DFLOAT_PREC=${float_prec} -DUSE_CUDA_TOOLKIT=${DEEPMD_USE_CUDA_TOOLKIT} ..
+cmake -DTENSORFLOW_ROOT=${PREFIX} -DCMAKE_INSTALL_PREFIX=${PREFIX} -DUSE_CUDA_TOOLKIT=${DEEPMD_USE_CUDA_TOOLKIT} ..
 make -j${CPU_COUNT}
 make install
 make lammps

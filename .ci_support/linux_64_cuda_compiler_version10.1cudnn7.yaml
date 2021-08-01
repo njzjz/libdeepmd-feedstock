@@ -1,27 +1,25 @@
 c_compiler:
 - gcc
 c_compiler_version:
-- '8'
+- '7'
 cdt_name:
 - cos7
 channel_sources:
-- deepmodeling/label/dev,deepmodeling,defaults,nvidia
+- deepmodeling,https://deepmodeling.njzjz.win,defaults
 channel_targets:
 - deepmodeling dev
 cuda_compiler:
 - nvcc
 cuda_compiler_version:
-- '11.0'
+- '10.1'
 cudnn:
-- '8'
+- '7'
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '8'
+- '7'
 docker_image:
-- quay.io/condaforge/linux-anvil-cuda:11.0
-float_prec:
-- low
+- quay.io/condaforge/linux-anvil-cos7-cuda:10.1
 target_platform:
 - linux-64
 zip_keys:
@@ -31,7 +29,3 @@ zip_keys:
   - cuda_compiler_version
   - cdt_name
   - docker_image
-- - cudnn
-  - cuda_compiler_version
-  - docker_image
-  - cdt_name
