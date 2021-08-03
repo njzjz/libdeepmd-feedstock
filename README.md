@@ -51,6 +51,20 @@ Current build status
                   <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_versionNonecudnnundefined" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>linux_ppc64le_cuda_compiler_version10.2cudnn8</td>
+              <td>
+                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_cuda_compiler_version10.2cudnn8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_cuda_compiler_versionNonecudnnundefined</td>
+              <td>
+                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_cuda_compiler_versionNonecudnnundefined" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
