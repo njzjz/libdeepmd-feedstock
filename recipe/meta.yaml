@@ -43,7 +43,7 @@ requirements:
     - {{ pin_compatible('cudnn') }}  # [cuda_compiler_version != 'None']
     - intel-openmp  # [linux64]
   run_constrained:
-    - lammps-dp >=2.0.0.b3
+    - lammps-dp >=2.0.0.b4
 
 test:
   commands:
