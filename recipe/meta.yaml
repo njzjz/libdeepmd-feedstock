@@ -1,5 +1,5 @@
 {% set name = "libdeepmd" %}
-{% set version = "2.0.0.b4" %}
+{% set version = "2.0.0" %}
 {% if cuda_compiler_version == "None" %}
 {% set dp_variant = "cpu" %}
 {% else %}
@@ -43,7 +43,7 @@ requirements:
     - {{ pin_compatible('cudnn') }}  # [cuda_compiler_version != 'None']
     - intel-openmp  # [linux64]
   run_constrained:
-    - lammps-dp >=2.0.0.b4
+    - lammps-dp >=2.0.0
 
 test:
   commands:
