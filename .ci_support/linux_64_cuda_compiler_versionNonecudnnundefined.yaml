@@ -7,7 +7,7 @@ cdt_name:
 channel_sources:
 - deepmodeling,https://deepmodeling.njzjz.win,defaults
 channel_targets:
-- deepmodeling dev
+- deepmodeling main
 cuda_compiler:
 - nvcc
 cuda_compiler_version:
