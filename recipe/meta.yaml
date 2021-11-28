@@ -38,6 +38,7 @@ requirements:
   host:
     - libtensorflow_cc {{ tf_version }}.* {{ tf_variant }}*
     - mpich
+    - nccl  # [cuda_compiler_version != "None"]
   run:
     - libtensorflow_cc {{ tf_version }}.* {{ tf_variant }}*
     - mpich
