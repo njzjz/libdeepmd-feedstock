@@ -36,10 +36,10 @@ requirements:
     - make
     - git
   host:
-    - libtensorflow_cc {{ tf_version }}.* {{ tf_variant }}
+    - libtensorflow_cc {{ tf_version }}.* {{ tf_variant }}*
     - mpich
   run:
-    - libtensorflow_cc {{ tf_version }}.* {{ tf_variant }}
+    - libtensorflow_cc {{ tf_version }}.* {{ tf_variant }}*
     - mpich
   run_constrained:
     - lammps-dp >=2.0.0
