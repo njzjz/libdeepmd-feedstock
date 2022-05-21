@@ -31,17 +31,17 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_cuda_compiler_version10.1</td>
+              <td>linux_64_cuda_compiler_version10.2</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version10.1" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version10.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version11.3</td>
+              <td>linux_64_cuda_compiler_version11.6</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version11.3" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/libdeepmd-feedstock?branchName=master&jobName=linux&configuration=linux_64_cuda_compiler_version11.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -76,16 +76,41 @@ conda config --add channels deepmodeling
 conda config --set channel_priority strict
 ```
 
-Once the `deepmodeling` channel has been enabled, `libdeepmd` can be installed with:
+Once the `deepmodeling` channel has been enabled, `libdeepmd` can be installed with `conda`:
 
 ```
 conda install libdeepmd
 ```
 
-It is possible to list all of the versions of `libdeepmd` available on your platform with:
+or with `mamba`:
+
+```
+mamba install libdeepmd
+```
+
+It is possible to list all of the versions of `libdeepmd` available on your platform with `conda`:
 
 ```
 conda search libdeepmd --channel deepmodeling
+```
+
+or with `mamba`:
+
+```
+mamba search libdeepmd --channel deepmodeling
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search libdeepmd --channel deepmodeling
+
+# List packages depending on `libdeepmd`:
+mamba repoquery whoneeds libdeepmd --channel deepmodeling
+
+# List dependencies of `libdeepmd`:
+mamba repoquery depends libdeepmd --channel deepmodeling
 ```
 
 
