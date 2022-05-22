@@ -1,0 +1,29 @@
+From a2b48009e957a0540beff1d24d538f4b22f96872 Mon Sep 17 00:00:00 2001
+From: Jinzhe Zeng <jinzhe.zeng@rutgers.edu>
+Date: Sat, 21 May 2022 20:41:28 -0400
+Subject: [PATCH] fix tf_cxx_abi in TF 2.9
+
+See https://github.com/tensorflow/tensorflow/commit/739002567ff81d731179a4b949def7e0f14737c8
+---
+ source/cmake/tf_cxx_abi.cpp | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/source/cmake/tf_cxx_abi.cpp b/source/cmake/tf_cxx_abi.cpp
+index 296b335b..0dee1f8c 100644
+--- a/source/cmake/tf_cxx_abi.cpp
++++ b/source/cmake/tf_cxx_abi.cpp
+@@ -2,6 +2,11 @@
+ #include "tensorflow/core/public/version.h"
+ int main(int argc, char * argv[])
+ {
++#if (TF_MAJOR_VERSION == 2 && TF_MINOR_VERSION>=9) || TF_MAJOR_VERSION > 2 
++#include "tensorflow/core/util/version_info.h"
++  std::cout << TF_CXX11_ABI_FLAG;
++#else
+   std::cout << tf_cxx11_abi_flag();
++#endif
+   return 0;
+ }
+-- 
+2.35.3
+
