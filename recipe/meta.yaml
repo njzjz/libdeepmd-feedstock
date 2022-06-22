@@ -17,11 +17,9 @@ package:
 source: 
   git_url: https://github.com/deepmodeling/deepmd-kit
   git_rev: v{{ version }}
-  patches:
-    - 0001-fix-tf_cxx_abi-in-TF-2.9.patch
 
 build:
-  number: 1
+  number: 2
   string: "{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"
   run_exports:
     - libdeepmd
@@ -38,12 +36,14 @@ requirements:
   host:
     - libtensorflow_cc {{ tf_version }}.* {{ tf_variant }}*
     - mpich
-    - nccl  # [cuda_compiler_version != "None"]
   run:
     - libtensorflow_cc {{ tf_version }}.* {{ tf_variant }}*
-    - mpich
+    - {{ pin_compatible('mpich') }}
+    - __cuda  # [cuda_compiler_version != 'None']
   run_constrained:
-    - lammps-dp >=2.0.0
+    - lammps 20220623.*
+    # deprecated lammps
+    - lammps-dp 99999999
 
 test:
   commands:
