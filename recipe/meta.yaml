@@ -21,7 +21,7 @@ source:
     - 0001-fix-tf_cxx_abi-in-TF-2.9.patch
 
 build:
-  number: 2
+  number: 3
   string: "{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"
   run_exports:
     - libdeepmd
@@ -42,6 +42,7 @@ requirements:
     - libtensorflow_cc {{ tf_version }}.* {{ tf_variant }}*
     - {{ pin_compatible('mpich') }}
     - __cuda  # [cuda_compiler_version != 'None']
+    - cudnn  # [cuda_compiler_version != 'None']
   run_constrained:
     - lammps 20220623.*
     # deprecated lammps
