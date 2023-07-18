@@ -42,7 +42,7 @@ requirements:
     - __cuda  # [cuda_compiler_version != 'None']
     - cudnn  # [cuda_compiler_version != 'None']
   run_constrained:
-    - lammps 20220623.*
+    - lammps 20220623.4
     # deprecated lammps
     - lammps-dp 99999999
 
