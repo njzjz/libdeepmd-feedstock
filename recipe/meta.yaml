@@ -32,7 +32,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}  # [cuda_compiler_version != 'None']
-    - cmake
+    - cmake >=3.23
     - make
     - git
   host:
