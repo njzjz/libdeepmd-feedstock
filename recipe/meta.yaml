@@ -1,5 +1,5 @@
 {% set name = "libdeepmd" %}
-{% set version = "2.2.3" %}
+{% set version = "2.2.4" %}
 {% if cuda_compiler_version == "None" %}
 {% set dp_variant = "cpu" %}
 {% set tf_variant = "cpu" %}
@@ -49,8 +49,22 @@ requirements:
     - lammps-dp 99999999
 
 test:
+  requires:
+    - deepmd-kit  # [cuda_compiler_version == 'None']
+    - lammps 20230802.0  # [cuda_compiler_version == 'None']
+  files:
+    - water_se_a.json  # [cuda_compiler_version == 'None']
+    - water.lmp  # [cuda_compiler_version == 'None']
+    - in.lammps  # [cuda_compiler_version == 'None']
+  source_files:
+    - examples/water/data  # [cuda_compiler_version == 'None']
   commands:
     - ldd $PREFIX/bin/dp_ipi
+    - mv examples/water/data/data_0 ./data  # [cuda_compiler_version == 'None']
+    - dp train water_se_a.json  # [cuda_compiler_version == 'None']
+    - dp freeze -o frozen_model.pb  # [cuda_compiler_version == 'None']
+    - mpiexec -n 1 lmp -in in.lammps  # [cuda_compiler_version == 'None']
+
 
 about:
   home: https://github.com/deepmodeling/deepmd-kit
