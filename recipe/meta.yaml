@@ -50,20 +50,20 @@ requirements:
 
 test:
   requires:
-    - deepmd-kit
-    - lammps 20230802.0
+    - deepmd-kit  # [cuda_compiler_version == 'None']
+    - lammps 20230802.0  # [cuda_compiler_version == 'None']
   files:
-    - water_se_a.json
-    - water.lmp
-    - in.lammps
+    - water_se_a.json  # [cuda_compiler_version == 'None']
+    - water.lmp  # [cuda_compiler_version == 'None']
+    - in.lammps  # [cuda_compiler_version == 'None']
   source_files:
-    - examples/water/data
+    - examples/water/data  # [cuda_compiler_version == 'None']
   commands:
     - ldd $PREFIX/bin/dp_ipi
-    - mv examples/water/data/data_0 ./data
-    - dp train water_se_a.json
-    - dp freeze -o frozen_model.pb
-    - mpiexec -n 1 lmp -in in.lammps
+    - mv examples/water/data/data_0 ./data  # [cuda_compiler_version == 'None']
+    - dp train water_se_a.json  # [cuda_compiler_version == 'None']
+    - dp freeze -o frozen_model.pb  # [cuda_compiler_version == 'None']
+    - mpiexec -n 1 lmp -in in.lammps  # [cuda_compiler_version == 'None']
 
 
 about:
