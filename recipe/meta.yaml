@@ -9,6 +9,7 @@
 {% endif %}
 
 {% set tf_version = "2.9" %}
+{% set lammps_version = "20230802.1" %}
 
 package:
   name: {{ name|lower }}
@@ -44,14 +45,14 @@ requirements:
     - __cuda  # [cuda_compiler_version != 'None']
     - cudnn  # [cuda_compiler_version != 'None']
   run_constrained:
-    - lammps 20230802.1
+    - lammps {{ lammps_version }}
     # deprecated lammps
     - lammps-dp 99999999
 
 test:
   requires:
     - deepmd-kit  # [cuda_compiler_version == 'None']
-    - lammps 20230802.0  # [cuda_compiler_version == 'None']
+    - lammps {{ lammps_version }}  # [cuda_compiler_version == 'None']
   files:
     - water_se_a.json  # [cuda_compiler_version == 'None']
     - water.lmp  # [cuda_compiler_version == 'None']
