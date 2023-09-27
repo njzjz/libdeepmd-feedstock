@@ -7,3 +7,5 @@ channels:
 channel_priority: flexible
   #provider:
   #linux_ppc64le: azure
+azure:
+  free_disk_space: True
