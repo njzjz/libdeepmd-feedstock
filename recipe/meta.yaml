@@ -22,7 +22,7 @@ source:
     - comment_host_compiler.patch  # [cuda_compiler_version == '10.2']
 
 build:
-  number: 0
+  number: 1
   string: "{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"
   run_exports:
     - libdeepmd

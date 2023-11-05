@@ -19,7 +19,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cuda:11.6
 mpich:
-- '3'
+- '4'
 nccl:
 - '2'
 target_platform:
