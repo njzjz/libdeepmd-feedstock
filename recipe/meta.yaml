@@ -1,5 +1,5 @@
 {% set name = "libdeepmd" %}
-{% set version = "2.2.7" %}
+{% set version = "2.2.8" %}
 {% if cuda_compiler_version == "None" %}
 {% set dp_variant = "cpu" %}
 {% set tf_variant = "cpu" %}
