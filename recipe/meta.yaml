@@ -1,5 +1,5 @@
 {% set name = "libdeepmd" %}
-{% set version = "2.2.8" %}
+{% set version = "2.2.9" %}
 {% if cuda_compiler_version == "None" %}
 {% set dp_variant = "cpu" %}
 {% set tf_variant = "cpu" %}
@@ -22,7 +22,7 @@ source:
     - comment_host_compiler.patch  # [cuda_compiler_version == '10.2']
 
 build:
-  number: 1
+  number: 0
   string: "{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"
   run_exports:
     - libdeepmd
